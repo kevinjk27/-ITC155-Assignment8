@@ -5,9 +5,9 @@
  */
 
 public class isSorted {
-	private ListNode front; 
+	private static ListNode front; 
 
-	public boolean isSorted() {
+	public static boolean isSorted() {
 		if (front == null) {
 			return true;
 		} 
@@ -22,4 +22,13 @@ public class isSorted {
 		}
 		return true;
 	}
+	
+	public static void main(String[] args) {
+		ListNode test1 = new ListNode();
+		test1.add(6);
+		test1.add(-3);
+		test1.add(5);
+		System.out.println(test1.toString());
+	}
+	
 }
